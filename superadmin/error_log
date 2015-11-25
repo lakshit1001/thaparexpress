@@ -1,0 +1,8 @@
+[10-Sep-2015 07:37:16 America/New_York] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE) in /home/bookfoxi/public_html/thapar/superadmin/image_upload.php on line 33
+[10-Sep-2015 07:39:40 America/New_York] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE) in /home/bookfoxi/public_html/thapar/superadmin/image_upload.php on line 33
+[10-Sep-2015 07:43:53 America/New_York] PHP Warning:  move_uploaded_file(../img/6.png): failed to open stream: Permission denied in /home/bookfoxi/public_html/thapar/superadmin/image_upload.php on line 12
+[10-Sep-2015 07:43:53 America/New_York] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpMIJsvK' to '../img/6.png' in /home/bookfoxi/public_html/thapar/superadmin/image_upload.php on line 12
+[10-Sep-2015 07:44:57 America/New_York] PHP Warning:  move_uploaded_file(../img/6.png): failed to open stream: Permission denied in /home/bookfoxi/public_html/thapar/superadmin/image_upload.php on line 12
+[10-Sep-2015 07:44:57 America/New_York] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpwrYOqr' to '../img/6.png' in /home/bookfoxi/public_html/thapar/superadmin/image_upload.php on line 12
+[10-Sep-2015 11:45:04 America/New_York] PHP Warning:  move_uploaded_file(../superadmineventimg/6.jpg): failed to open stream: No such file or directory in /home/bookfoxi/public_html/thapar/superadmin/image_upload.php on line 13
+[10-Sep-2015 11:45:05 America/New_York] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpY8mMIq' to '../superadmineventimg/6.jpg' in /home/bookfoxi/public_html/thapar/superadmin/image_upload.php on line 13

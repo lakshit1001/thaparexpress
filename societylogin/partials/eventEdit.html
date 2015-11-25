@@ -1,0 +1,65 @@
+    <button type="button" class="close" ng-click="cancel();">
+        <i class="fa fa-times-circle-o" style="margin:10px;color:blue;"></i>
+    </button>
+    <div class="modal-header">
+        <h3 class="modal-title">Edit event [ID: {{event.id}}]</h3>
+    </div>
+    <div class="modal-body">
+        <form name="event_form" class="form-horizontal" role="form" novalidate>
+            
+            <form-element label="name" mod="event">
+                <input type="text" class="form-control" class="name" placeholder="name" ng-model="event.name"  focus/>
+            </form-element>
+            <form-element label="venue" mod="event">
+                <input type="text" class="form-control" class="venue" placeholder="venue" ng-model="event.venue"  focus/>
+            </form-element>
+            <form-element label="date" mod="event">
+                <input type="text" class="form-control" class="date" placeholder="date" ng-model="event.date"  focus/>
+            </form-element>
+            <form-element label="time" mod="event">
+                <input type="text" class="form-control" class="time" placeholder="time" ng-model="event.time"  focus/>
+            </form-element>
+            <form-element label="cost" mod="event">
+                <input type="text" class="form-control" class="cost" placeholder="cost" ng-model="event.cost"  focus/>
+            </form-element>
+            <form-element label="description" mod="event">
+                <textarea type="text" class="form-control" class="description" placeholder="description" ng-model="event.description"  >{{event.description}}</textarea>
+            </form-element>
+            <form-element label="short_description" mod="event">
+                <textarea type="text" class="form-control" class="short_description" placeholder="short_description" ng-model="event.short_description"  >{{event.short_description}}</textarea>
+            </form-element>
+
+
+            <form-element label="Event Photo" mod="event">
+              <input type="file" ngf-select ng-model="picFile" name="file"
+              accept="image/*" ngf-max-size="2MB">
+              <i ng-show="myForm.file.$error.maxSize">File too large
+                {{picFile.size / 1000000|number:1}}MB: max {{picFile.$errorParam}}</i>
+                <img  src="../superadmin/eventimg/{{event.image}}" style="max-width:100px;" alt="Image not available" class="img-responsive" />
+                <br>
+                <button ng-click="uploadPic(picFile)">Upload File</button>
+                <span class="progress" ng-show="picFile.progress >= 0">
+                  <div style="width:{{picFile.progress}}%"
+                  ng-bind="picFile.progress + '%'"></div>
+                </span>
+                <span ng-show="picFile.result">Upload Successful</span>
+                <span class="err" ng-show="errorMsg">{{errorMsg}}</span>
+            </form-element>
+
+            <div class="space"></div>
+            <div class="space-4"></div>
+            <div class="modal-footer">
+                <form-element label="">
+                    <div class="text-right">
+                        <a class="btn btn-sm" ng-click="cancel()"><i class="ace-icon fa fa-reply"></i>Cancel</a>
+                        <button ng-click="saveevent(event);"
+                                ng-disabled="event_form.$invalid || enableUpdate"
+                                class="btn btn-sm btn-primary"
+                                type="submit">
+                            <i class="ace-icon fa fa-check"></i>{{buttonText}}
+                        </button>
+                    </div>
+                </form-element>
+            </div>
+        </form>
+    </div>

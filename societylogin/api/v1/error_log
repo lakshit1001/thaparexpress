@@ -1,0 +1,5 @@
+[11-Jul-2015 02:48:38 America/New_York] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/bookfoxi/public_html/brinjal.me/malhotra/panel/student/api/v1/dbHelper.php on line 9
+[07-Oct-2015 00:33:16 America/New_York] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY) in /home/bookfoxi/public_html/thapar/societylogin/api/v1/index.php on line 147
+[07-Oct-2015 00:40:23 America/New_York] PHP Fatal error:  Call to undefined method Slim\Slim::participants() in /home/bookfoxi/public_html/thapar/societylogin/api/v1/index.php on line 145
+[07-Oct-2015 00:40:39 America/New_York] PHP Fatal error:  Call to undefined method Slim\Slim::participants() in /home/bookfoxi/public_html/thapar/societylogin/api/v1/index.php on line 145
+[07-Oct-2015 00:40:55 America/New_York] PHP Fatal error:  Call to undefined method Slim\Slim::participants() in /home/bookfoxi/public_html/thapar/societylogin/api/v1/index.php on line 145

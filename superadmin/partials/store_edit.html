@@ -1,0 +1,47 @@
+    <button type="button" class="close" ng-click="cancel();">
+        <i class="fa fa-times-circle-o" style="margin:10px;color:blue;"></i>
+    </button>
+    <div class="modal-header">
+        <h3 class="modal-title">Edit store_edit [ID: {{store_edit.id}}]</h3>
+    </div>
+    <div class="modal-body">
+        <form name="store_edit_form" class="form-horizontal" role="form" novalidate>
+            <form-element label="id" mod="store_edit">
+                <input type="text" class="form-control" id="id" placeholder="id" ng-model="store_edit.id"  focus/>
+            </form-element>
+            <form-element label="name" mod="store_edit">   
+                <input type="text" class="form-control" name="name" placeholder="name" ng-model="store_edit.name"  focus/>
+            </form-element>
+            <form-element label="Cat" mod="store_edit">
+                <input type="text" class="form-control" Cat="Cat" placeholder="Cat" ng-model="store_edit.Cat"  focus/>
+            </form-element>
+            <form-element label="price" mod="store_edit">
+                <input type="text" class="form-control" price="price" placeholder="price" ng-model="store_edit.price"  focus/>
+            </form-element>
+            <form-element label="condition" mod="store_edit">
+                <input type="text" class="form-control" condition="condition" placeholder="condition" ng-model="store_edit.condition"  focus/>
+            </form-element>
+            <form-element label="status" mod="store_edit">
+                <input type="text" class="form-control" status="status" placeholder="status" ng-model="store_edit.status"  focus/>
+            </form-element>
+            <form-element label="userid" mod="store_edit">
+                <input type="text" class="form-control" userid="userid" placeholder="userid" ng-model="store_edit.userid"  focus/>
+            </form-element> 
+
+            <div class="space"></div>
+            <div class="space-4"></div>
+            <div class="modal-footer">
+                <form-element label="">
+                    <div class="text-right">
+                        <a class="btn btn-sm" ng-click="cancel()"><i class="ace-icon fa fa-reply"></i>Cancel</a>
+                        <button ng-click="savestore_edit(store_edit);"
+                                ng-disabled="store_edit_form.$invalid || enableUpdate"
+                                class="btn btn-sm btn-primary"
+                                type="submit">
+                            <i class="ace-icon fa fa-check"></i>{{buttonText}}
+                        </button>
+                    </div>
+                </form-element>
+            </div>
+        </form>
+    </div>

@@ -1,0 +1,1 @@
+[11-Jul-2015 02:48:38 America/New_York] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/bookfoxi/public_html/brinjal.me/malhotra/panel/student/api/v1/dbHelper.php on line 9

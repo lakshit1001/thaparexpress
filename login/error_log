@@ -1,0 +1,28 @@
+[13-Nov-2014 08:48:03 America/Chicago] PHP Warning:  mysql_connect(): Host 'amsrv20.fastcpanelserver.com' is not allowed to connect to this MySQL server in /home/txpress/public_html/login/config.php on line 14
+[13-Nov-2014 08:48:53 America/Chicago] PHP Warning:  mysql_connect(): Host 'amsrv20.fastcpanelserver.com' is not allowed to connect to this MySQL server in /home/txpress/public_html/login/config.php on line 14
+[22-Nov-2014 09:05:35 America/Chicago] PHP Warning:  include(menu.php): failed to open stream: No such file or directory in /home/txpress/public_html/login/index.php on line 30
+[22-Nov-2014 09:05:35 America/Chicago] PHP Warning:  include(menu.php): failed to open stream: No such file or directory in /home/txpress/public_html/login/index.php on line 30
+[22-Nov-2014 09:05:35 America/Chicago] PHP Warning:  include(): Failed opening 'menu.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/txpress/public_html/login/index.php on line 30
+[22-Nov-2014 09:05:37 America/Chicago] PHP Warning:  include(menu.php): failed to open stream: No such file or directory in /home/txpress/public_html/login/index.php on line 30
+[22-Nov-2014 09:05:37 America/Chicago] PHP Warning:  include(menu.php): failed to open stream: No such file or directory in /home/txpress/public_html/login/index.php on line 30
+[22-Nov-2014 09:05:37 America/Chicago] PHP Warning:  include(): Failed opening 'menu.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/txpress/public_html/login/index.php on line 30
+[22-Nov-2014 09:49:28 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/txpress/public_html/menu.php on line 20
+[22-Nov-2014 09:49:30 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/txpress/public_html/menu.php on line 20
+[05-Mar-2015 04:08:25 America/New_York] PHP Warning:  mysql_connect(): Access denied for user 'txpress_tx'@'localhost' (using password: YES) in /home/bookfoxi/public_html/thaparexpress.in/login/config.php on line 40
+[10-Apr-2015 03:25:15 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/bookfoxi/public_html/thapar/login/reg.php:145) in /home/bookfoxi/public_html/thapar/login/reg.php on line 604
+[11-Apr-2015 15:11:00 America/New_York] PHP Parse error:  syntax error, unexpected 'SELECT' (T_STRING) in /home/bookfoxi/public_html/thapar/login/register.php on line 58
+[11-Apr-2015 15:11:38 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/bookfoxi/public_html/thapar/login/register.php on line 286
+[11-Apr-2015 15:13:39 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/bookfoxi/public_html/thapar/login/register.php on line 286
+[11-Apr-2015 15:13:48 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/bookfoxi/public_html/thapar/login/register.php on line 283
+[11-Apr-2015 15:13:54 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/bookfoxi/public_html/thapar/login/register.php on line 283
+[11-Apr-2015 15:29:57 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bookfoxi/public_html/thapar/login/regi.php on line 57
+[11-Apr-2015 15:40:20 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bookfoxi/public_html/thapar/login/regi.php on line 57
+[11-Apr-2015 15:42:18 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bookfoxi/public_html/thapar/login/regi.php on line 57
+[11-Apr-2015 15:57:06 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bookfoxi/public_html/thapar/login/regi.php on line 57
+[11-Apr-2015 15:57:25 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bookfoxi/public_html/thapar/login/regi.php on line 57
+[11-Apr-2015 15:57:53 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bookfoxi/public_html/thapar/login/regi.php on line 57
+[11-Apr-2015 15:58:05 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/bookfoxi/public_html/thapar/login/regi.php on line 57
+[11-Apr-2015 16:06:47 America/New_York] PHP Parse error:  syntax error, unexpected '}' in /home/bookfoxi/public_html/thapar/login/regi.php on line 62
+[11-Apr-2015 16:09:13 America/New_York] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/bookfoxi/public_html/thapar/login/regi.php on line 66
+[11-Apr-2015 16:47:35 America/New_York] PHP Warning:  mysql_query(): Access denied for user 'root'@'localhost' (using password: NO) in /home/bookfoxi/public_html/thapar/login/register.php on line 18
+[11-Apr-2015 16:47:35 America/New_York] PHP Warning:  mysql_query(): A link to the server could not be established in /home/bookfoxi/public_html/thapar/login/register.php on line 18

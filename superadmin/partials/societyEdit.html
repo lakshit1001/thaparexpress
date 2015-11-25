@@ -1,0 +1,40 @@
+    <button type="button" class="close" ng-click="cancel();">
+        <i class="fa fa-times-circle-o" style="margin:10px;color:blue;"></i>
+    </button>
+    <div class="modal-header">
+        <h3 class="modal-title">Edit society [ID: {{society.id}}]</h3>
+    </div>
+    <div class="modal-body">
+        <form name="society_form" class="form-horizontal" role="form" novalidate>
+            <form-element label="Name" mod="society">
+                <input type="text" class="form-control" name="name" placeholder="Name" ng-model="society.name"  focus/>
+            </form-element>
+            
+            <form-element label="E-mail ID" mod="society">
+                <input type="text" name="email" class="form-control" placeholder="E-mail ID" ng-model="society.email"/>
+                <small class="errorMessage" ng-show="society_form.email.$dirty && society_form.email.$invalid"> Enter e-mail ID.</small>
+            </form-element>
+            <form-element label="category" mod="society">
+               <select name="class" class="form-control"  ng-model="society.category" >
+                    <option value="StudentChapter">StudentChapter</option>
+                    <option value="Technical">Technical</option>
+                    <option value="Cultural">Cultural</option>
+                </select>
+            </form-element>           
+            <div class="space"></div>
+            <div class="space-4"></div>
+            <div class="modal-footer">
+                <form-element label="">
+                    <div class="text-right">
+                        <a class="btn btn-sm" ng-click="cancel()"><i class="ace-icon fa fa-reply"></i>Cancel</a>
+                        <button ng-click="savesociety(society);"
+                                ng-disabled="society_form.$invalid || enableUpdate"
+                                class="btn btn-sm btn-primary"
+                                type="submit">
+                            <i class="ace-icon fa fa-check"></i>{{buttonText}}
+                        </button>
+                    </div>
+                </form-element>
+            </div>
+        </form>
+    </div>

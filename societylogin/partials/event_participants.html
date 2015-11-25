@@ -1,0 +1,29 @@
+    <button type="button" class="close" ng-click="cancel();">
+        <i class="fa fa-times-circle-o" style="margin:10px;color:blue;"></i>
+    </button>
+    <div class="modal-header">
+        <h3 class="modal-title">Event Paticipants</h3>
+    </div>
+    <div class="modal-body">
+    <table class="table">
+    <thead>
+        <td>No</td>
+        <td>Name</td>
+        <td>Hostel</td>
+        <td>Phone</td>
+        <td>Year</td>
+        <td>Branch</td>
+        <td>Rollnum</td>
+    </thead>
+        <tr ng-repeat="participant in participants">
+            <td>{{participant.sno}}</td>
+            <td>{{participant.name}}</td>
+            <td>{{participant.hostel}}</td>
+            <td>{{participant.phone}}</td>
+            <td>{{participant.year}}</td>
+            <td>{{participant.branch}}</td>
+            <td>{{participant.rollnum}}</td>
+        </tr>
+    </table>
+    </div>
+      

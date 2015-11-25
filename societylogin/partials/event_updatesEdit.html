@@ -1,0 +1,50 @@
+    <button type="button" class="close" ng-click="cancel();">
+        <i class="fa fa-times-circle-o" style="margin:10px;color:blue;"></i>
+    </button>
+    <div class="modal-header">
+        <h3 class="modal-title">Edit event_updates [ID: {{event_updates.id}}]</h3>
+    </div>
+    <div class="modal-body">
+        <form name="event_updates_form" class="form-horizontal" role="form" novalidate>
+            
+                        <form-element label="title" mod="event_updates">
+                <input type="text" class="form-control" name="title" placeholder="title" ng-model="event_updates.title"  focus/>
+            </form-element>
+            <form-element label="Message" mod="event_updates">
+                <textarea type="text" name="message" class="form-control" rows="4" placeholder="Enter Message here." ng-model="event_updates.message"/></textarea>
+            </form-element>
+            <form-element label="Color" mod="event_updates">
+                <select name="type" class="form-control" placeholder="color" ng-model="event_updates.color" >
+                    <option selected="selected" value="alert-info">Blue</option>
+                    <option value="alert-warning">Yellow</option>
+                    <option value="alert-danger">Red</option>
+                    <option value="alert-success">Green</option>
+                </select>
+            </form-element>
+            <form-element label="Event" mod="event_updates">
+                <select name="type" class="form-control" placeholder="color" ng-model="event_updates.eventid" >
+                    <option selected="selected" value="{{event_updates.eventid}}">{{event_updates.eventid}}</option>
+                    <option ng-repeat="event in events" value="{{event.id}}">{{event.name}}</option>
+                </select>
+            </form-element>
+                
+
+
+
+            <div class="space"></div>
+            <div class="space-4"></div>
+            <div class="modal-footer">
+                <form-element label="">
+                    <div class="text-right">
+                        <a class="btn btn-sm" ng-click="cancel()"><i class="ace-icon fa fa-reply"></i>Cancel</a>
+                        <button ng-click="saveevent_updates(event_updates);"
+                                ng-disabled="event_updates_form.$invalid || enableUpdate"
+                                class="btn btn-sm btn-primary"
+                                type="submit">
+                            <i class="ace-icon fa fa-check"></i>{{buttonText}}
+                        </button>
+                    </div>
+                </form-element>
+            </div>
+        </form>
+    </div>

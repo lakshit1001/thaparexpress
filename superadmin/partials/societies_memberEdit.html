@@ -1,0 +1,38 @@
+    <button type="button" class="close" ng-click="cancel();">
+        <i class="fa fa-times-circle-o" style="margin:10px;color:blue;"></i>
+    </button>
+    <div class="modal-header">
+        <h3 class="modal-title">Edit society member [ID: {{societies_member.id}}]</h3>
+    </div>
+    <div class="modal-body">
+        <form name="society_form" class="form-horizontal" role="form" novalidate>
+            <form-element label="Name" mod="societies_member">
+                <input type="text" class="form-control" name="name" placeholder="Name" ng-model="societies_member.name"  focus/>
+            </form-element>
+            <form-element label="Position" mod="societies_member">
+                <input type="text" class="form-control" name="position" placeholder="Position" ng-model="societies_member.position"  focus/>
+            </form-element>
+            <form-element label="Phone" mod="societies_member">
+                <input type="text" class="form-control" name="phone" placeholder="Phone" ng-model="societies_member.phone"  focus/>
+            </form-element>
+            
+            <form-element label="E-mail ID" mod="societies_member">
+                <input type="text" name="email" class="form-control" placeholder="E-mail ID" ng-model="societies_member.email"/>
+            </form-element>          
+            <div class="space"></div>
+            <div class="space-4"></div>
+            <div class="modal-footer">
+                <form-element label="">
+                    <div class="text-right">
+                        <a class="btn btn-sm" ng-click="cancel()"><i class="ace-icon fa fa-reply"></i>Cancel</a>
+                        <button ng-click="savesocieties_member(societies_member);"
+                                ng-disabled="society_form.$invalid || enableUpdate"
+                                class="btn btn-sm btn-primary"
+                                type="submit">
+                            <i class="ace-icon fa fa-check"></i>{{buttonText}}
+                        </button>
+                    </div>
+                </form-element>
+            </div>
+        </form>
+    </div>
