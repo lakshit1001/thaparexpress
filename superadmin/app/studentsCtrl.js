@@ -7,7 +7,7 @@ app.controller('studentsCtrl', function ($scope, $modal, $filter, Data) {
         student.status = (student.status=="Active" ? "Inactive" : "Active");
         Data.put("students/"+student.id,{status:student.status});
     };
-    $scope.deleteFtudent = function(student){
+    $scope.deleteStudent = function(student){
         if(confirm("Are you sure to remove the student")){
             Data.delete("students/"+student.id).then(function(result){
                 $scope.students = _.without($scope.students, _.findWhere($scope.students, {id:student.id}));
